@@ -1,0 +1,16 @@
+package com.example.ianwa.distfr;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+public class RecognizeActivity extends AppCompatActivity {
+
+    String acc_id;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_recognize);
+        acc_id = getIntent().getStringExtra("acc_id");
+    }
+}

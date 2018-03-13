@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ianwa.distfr.RecognizeActivity"
+    android:padding="@dimen/activity_vertical_margin"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/rec_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/mess"
+        android:layout_gravity="center_horizontal"
+        android:text="" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:id="@+id/addFace_iv" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_button"
+            android:layout_marginStart="35dp"
+            android:id="@+id/addFace_take"
+            android:text="@string/take" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_button"
+            android:text="@string/rec"
+            android:id="@+id/rec_rec"
+            android:layout_marginStart="50dp"
+            android:onClick="onUploadClicked"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_button"
+        android:text="@string/back"
+        android:onClick="onBackClicked"/>
+
+</LinearLayout>

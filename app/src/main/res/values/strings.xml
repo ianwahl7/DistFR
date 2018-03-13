@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">DistFR</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="appname">Distributed FR</string>
+    <string name="user">Username</string>
+    <string name="pass">Password</string>
+    <string name="conf">Confirm Password</string>
+    <string name="log">Login</string>
+    <string name="back">Back</string>
+    <string name="rec">Recognize</string>
+    <string name="next">Next</string>
+    <string name="createAcc">Create Account</string>
+    <string name="accName">Account Name</string>
+    <string name="error_blank">Please make sure all fields are filled.</string>
+    <string name="error_name">Invalid Account Name.</string>
+    <string name="error_user">Invalid Username.</string>
+    <string name="error_pass">Passwords do not match.</string>
+    <string name="error_connection">Connection Failure</string>
+    <string name="add">Add Face</string>
+    <string name="welcome">Welcome\nAccount Name</string>
+    <string name="home">Home</string>
+    <string name="logout">Logout</string>
+    <string name="take">Take Image</string>
+    <string name="up">Upload Image</string>
+    <string name="pers">Person Name</string>
+    <string name="error_pers">Please enter a Person Name.</string>
+    <string name="error_img">Please take an Image to Upload.</string>
+    <string name="blank"></string>
+
+
+</resources>

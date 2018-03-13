@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="com.example.ianwa.distfr.CreateAccActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/header_top"
+        android:text="@string/appname"
+        android:layout_gravity="center"
+        style="@style/header" />
+
+    <TextView
+        android:id="@+id/createAcc_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/mess"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="@dimen/margin_message"
+        android:text="" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/createAcc_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:hint="@string/accName"
+                android:layout_marginTop="@dimen/margin_prompt" />
+
+            <EditText
+                android:id="@+id/createAcc_user"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:hint="@string/user"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/margin_prompt" />
+
+            <EditText
+                android:id="@+id/createAcc_pass1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/pass"
+                android:maxLines="1"
+                android:layout_marginTop="@dimen/margin_prompt"  />
+
+            <EditText
+                android:id="@+id/createAcc_pass2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:hint="@string/conf"
+                android:layout_marginTop="@dimen/margin_prompt"
+                android:maxLines="1"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_button"
+        android:text="@string/createAcc"
+        android:onClick="onCreateAccClicked"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_button"
+        android:text="@string/back"
+        android:onClick="onBackClicked"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:id="@+id/createAcc_hidden"/>
+
+</LinearLayout>
